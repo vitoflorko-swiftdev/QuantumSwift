@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFEBD74F20D0F96500F00450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD74E20D0F96500F00450 /* AppDelegate.swift */; };
+		BFEBD75120D0F96500F00450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD75020D0F96500F00450 /* ViewController.swift */; };
+		BFEBD75420D0F96500F00450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEBD75220D0F96500F00450 /* Main.storyboard */; };
+		BFEBD75620D0F96700F00450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEBD75520D0F96700F00450 /* Assets.xcassets */; };
+		BFEBD75920D0F96700F00450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEBD75720D0F96700F00450 /* LaunchScreen.storyboard */; };
+		BFEBD76920D0F9E100F00450 /* IbmEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD76820D0F9E100F00450 /* IbmEnums.swift */; };
+		BFEBD76B20D0FACC00F00450 /* IbmTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD76A20D0FACC00F00450 /* IbmTypes.swift */; };
+		BFEBD76D20D0FFD800F00450 /* IbmQX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD76C20D0FFD800F00450 /* IbmQX.swift */; };
+		BFEBD76F20D112CC00F00450 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD76E20D112CC00F00450 /* Storage.swift */; };
+		BFEBD77120D153AE00F00450 /* QuantumProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77020D153AE00F00450 /* QuantumProgram.swift */; };
+		BFEBD77320D1550600F00450 /* IQubit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77220D1550600F00450 /* IQubit.swift */; };
+		BFEBD77520D155AE00F00450 /* Qubit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77420D155AE00F00450 /* Qubit.swift */; };
+		BFEBD77720D156EA00F00450 /* IQuantumCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77620D156EA00F00450 /* IQuantumCommand.swift */; };
+		BFEBD77920D1573000F00450 /* ProgramTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77820D1573000F00450 /* ProgramTypes.swift */; };
+		BFEBD77B20D2468D00F00450 /* Barrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77A20D2468D00F00450 /* Barrier.swift */; };
+		BFEBD77D20D2492100F00450 /* ControlledNOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD77C20D2492100F00450 /* ControlledNOT.swift */; };
+		BFEBD78120D2493900F00450 /* Hadamard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78020D2493900F00450 /* Hadamard.swift */; };
+		BFEBD78320D2493E00F00450 /* Idle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78220D2493E00F00450 /* Idle.swift */; };
+		BFEBD78520D2494800F00450 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78420D2494800F00450 /* Measurement.swift */; };
+		BFEBD78720D2495800F00450 /* PauliX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78620D2495800F00450 /* PauliX.swift */; };
+		BFEBD78920D2495F00F00450 /* PauliY.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78820D2495F00F00450 /* PauliY.swift */; };
+		BFEBD78B20D2496B00F00450 /* PauliZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78A20D2496B00F00450 /* PauliZ.swift */; };
+		BFEBD78D20D2497500F00450 /* S_PhaseGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78C20D2497500F00450 /* S_PhaseGate.swift */; };
+		BFEBD78F20D2498100F00450 /* S_PhaseGateT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD78E20D2498100F00450 /* S_PhaseGateT.swift */; };
+		BFEBD79120D2498900F00450 /* T_PhaseGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79020D2498900F00450 /* T_PhaseGate.swift */; };
+		BFEBD79320D2499100F00450 /* T_PhaseGateT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79220D2499100F00450 /* T_PhaseGateT.swift */; };
+		BFEBD79520D2499600F00450 /* U1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79420D2499600F00450 /* U1.swift */; };
+		BFEBD79720D2499C00F00450 /* U2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79620D2499C00F00450 /* U2.swift */; };
+		BFEBD79920D249A400F00450 /* U3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79820D249A400F00450 /* U3.swift */; };
+		BFEBD79B20D2952900F00450 /* ProgramParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79A20D2952900F00450 /* ProgramParser.swift */; };
+		BFEBD79D20D298ED00F00450 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD79C20D298ED00F00450 /* Commands.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFEBD74B20D0F96500F00450 /* QuantumSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantumSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEBD74E20D0F96500F00450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFEBD75020D0F96500F00450 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFEBD75320D0F96500F00450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFEBD75520D0F96700F00450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFEBD75820D0F96700F00450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFEBD75A20D0F96700F00450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEBD76820D0F9E100F00450 /* IbmEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbmEnums.swift; sourceTree = "<group>"; };
+		BFEBD76A20D0FACC00F00450 /* IbmTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbmTypes.swift; sourceTree = "<group>"; };
+		BFEBD76C20D0FFD800F00450 /* IbmQX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbmQX.swift; sourceTree = "<group>"; };
+		BFEBD76E20D112CC00F00450 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BFEBD77020D153AE00F00450 /* QuantumProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumProgram.swift; sourceTree = "<group>"; };
+		BFEBD77220D1550600F00450 /* IQubit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQubit.swift; sourceTree = "<group>"; };
+		BFEBD77420D155AE00F00450 /* Qubit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qubit.swift; sourceTree = "<group>"; };
+		BFEBD77620D156EA00F00450 /* IQuantumCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQuantumCommand.swift; sourceTree = "<group>"; };
+		BFEBD77820D1573000F00450 /* ProgramTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTypes.swift; sourceTree = "<group>"; };
+		BFEBD77A20D2468D00F00450 /* Barrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barrier.swift; sourceTree = "<group>"; };
+		BFEBD77C20D2492100F00450 /* ControlledNOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlledNOT.swift; sourceTree = "<group>"; };
+		BFEBD78020D2493900F00450 /* Hadamard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hadamard.swift; sourceTree = "<group>"; };
+		BFEBD78220D2493E00F00450 /* Idle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idle.swift; sourceTree = "<group>"; };
+		BFEBD78420D2494800F00450 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		BFEBD78620D2495800F00450 /* PauliX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauliX.swift; sourceTree = "<group>"; };
+		BFEBD78820D2495F00F00450 /* PauliY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauliY.swift; sourceTree = "<group>"; };
+		BFEBD78A20D2496B00F00450 /* PauliZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauliZ.swift; sourceTree = "<group>"; };
+		BFEBD78C20D2497500F00450 /* S_PhaseGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_PhaseGate.swift; sourceTree = "<group>"; };
+		BFEBD78E20D2498100F00450 /* S_PhaseGateT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_PhaseGateT.swift; sourceTree = "<group>"; };
+		BFEBD79020D2498900F00450 /* T_PhaseGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_PhaseGate.swift; sourceTree = "<group>"; };
+		BFEBD79220D2499100F00450 /* T_PhaseGateT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_PhaseGateT.swift; sourceTree = "<group>"; };
+		BFEBD79420D2499600F00450 /* U1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U1.swift; sourceTree = "<group>"; };
+		BFEBD79620D2499C00F00450 /* U2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U2.swift; sourceTree = "<group>"; };
+		BFEBD79820D249A400F00450 /* U3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U3.swift; sourceTree = "<group>"; };
+		BFEBD79A20D2952900F00450 /* ProgramParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramParser.swift; sourceTree = "<group>"; };
+		BFEBD79C20D298ED00F00450 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFEBD74820D0F96500F00450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFEBD74220D0F96500F00450 = {
+			isa = PBXGroup;
+			children = (
+				BFEBD74D20D0F96500F00450 /* QuantumSwift */,
+				BFEBD74C20D0F96500F00450 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFEBD74C20D0F96500F00450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD74B20D0F96500F00450 /* QuantumSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFEBD74D20D0F96500F00450 /* QuantumSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD76020D0F97300F00450 /* Commands */,
+				BFEBD76320D0F98000F00450 /* Protocols */,
+				BFEBD76220D0F97E00F00450 /* Ibm */,
+				BFEBD76620D0F98D00F00450 /* Qubit */,
+				BFEBD76520D0F98B00F00450 /* QuantumProgram */,
+				BFEBD76420D0F98900F00450 /* ProgramParser */,
+				BFEBD76720D0F99200F00450 /* Storage */,
+				BFEBD74E20D0F96500F00450 /* AppDelegate.swift */,
+				BFEBD75020D0F96500F00450 /* ViewController.swift */,
+				BFEBD79C20D298ED00F00450 /* Commands.swift */,
+				BFEBD75220D0F96500F00450 /* Main.storyboard */,
+				BFEBD75520D0F96700F00450 /* Assets.xcassets */,
+				BFEBD75720D0F96700F00450 /* LaunchScreen.storyboard */,
+				BFEBD75A20D0F96700F00450 /* Info.plist */,
+			);
+			path = QuantumSwift;
+			sourceTree = "<group>";
+		};
+		BFEBD76020D0F97300F00450 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD77620D156EA00F00450 /* IQuantumCommand.swift */,
+				BFEBD77A20D2468D00F00450 /* Barrier.swift */,
+				BFEBD77C20D2492100F00450 /* ControlledNOT.swift */,
+				BFEBD78020D2493900F00450 /* Hadamard.swift */,
+				BFEBD78220D2493E00F00450 /* Idle.swift */,
+				BFEBD78420D2494800F00450 /* Measurement.swift */,
+				BFEBD78620D2495800F00450 /* PauliX.swift */,
+				BFEBD78820D2495F00F00450 /* PauliY.swift */,
+				BFEBD78A20D2496B00F00450 /* PauliZ.swift */,
+				BFEBD78C20D2497500F00450 /* S_PhaseGate.swift */,
+				BFEBD78E20D2498100F00450 /* S_PhaseGateT.swift */,
+				BFEBD79020D2498900F00450 /* T_PhaseGate.swift */,
+				BFEBD79220D2499100F00450 /* T_PhaseGateT.swift */,
+				BFEBD79420D2499600F00450 /* U1.swift */,
+				BFEBD79620D2499C00F00450 /* U2.swift */,
+				BFEBD79820D249A400F00450 /* U3.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		BFEBD76220D0F97E00F00450 /* Ibm */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD76820D0F9E100F00450 /* IbmEnums.swift */,
+				BFEBD76C20D0FFD800F00450 /* IbmQX.swift */,
+				BFEBD76A20D0FACC00F00450 /* IbmTypes.swift */,
+			);
+			path = Ibm;
+			sourceTree = "<group>";
+		};
+		BFEBD76320D0F98000F00450 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD77220D1550600F00450 /* IQubit.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BFEBD76420D0F98900F00450 /* ProgramParser */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD77820D1573000F00450 /* ProgramTypes.swift */,
+				BFEBD79A20D2952900F00450 /* ProgramParser.swift */,
+			);
+			path = ProgramParser;
+			sourceTree = "<group>";
+		};
+		BFEBD76520D0F98B00F00450 /* QuantumProgram */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD77020D153AE00F00450 /* QuantumProgram.swift */,
+			);
+			path = QuantumProgram;
+			sourceTree = "<group>";
+		};
+		BFEBD76620D0F98D00F00450 /* Qubit */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD77420D155AE00F00450 /* Qubit.swift */,
+			);
+			path = Qubit;
+			sourceTree = "<group>";
+		};
+		BFEBD76720D0F99200F00450 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD76E20D112CC00F00450 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFEBD74A20D0F96500F00450 /* QuantumSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEBD75D20D0F96700F00450 /* Build configuration list for PBXNativeTarget "QuantumSwift" */;
+			buildPhases = (
+				BFEBD74720D0F96500F00450 /* Sources */,
+				BFEBD74820D0F96500F00450 /* Frameworks */,
+				BFEBD74920D0F96500F00450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantumSwift;
+			productName = QuantumSwift;
+			productReference = BFEBD74B20D0F96500F00450 /* QuantumSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFEBD74320D0F96500F00450 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = florkosoft;
+				TargetAttributes = {
+					BFEBD74A20D0F96500F00450 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BFEBD74620D0F96500F00450 /* Build configuration list for PBXProject "QuantumSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFEBD74220D0F96500F00450;
+			productRefGroup = BFEBD74C20D0F96500F00450 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFEBD74A20D0F96500F00450 /* QuantumSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFEBD74920D0F96500F00450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEBD75920D0F96700F00450 /* LaunchScreen.storyboard in Resources */,
+				BFEBD75620D0F96700F00450 /* Assets.xcassets in Resources */,
+				BFEBD75420D0F96500F00450 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFEBD74720D0F96500F00450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEBD75120D0F96500F00450 /* ViewController.swift in Sources */,
+				BFEBD79120D2498900F00450 /* T_PhaseGate.swift in Sources */,
+				BFEBD78320D2493E00F00450 /* Idle.swift in Sources */,
+				BFEBD78520D2494800F00450 /* Measurement.swift in Sources */,
+				BFEBD77120D153AE00F00450 /* QuantumProgram.swift in Sources */,
+				BFEBD79B20D2952900F00450 /* ProgramParser.swift in Sources */,
+				BFEBD76920D0F9E100F00450 /* IbmEnums.swift in Sources */,
+				BFEBD78B20D2496B00F00450 /* PauliZ.swift in Sources */,
+				BFEBD79920D249A400F00450 /* U3.swift in Sources */,
+				BFEBD78920D2495F00F00450 /* PauliY.swift in Sources */,
+				BFEBD78120D2493900F00450 /* Hadamard.swift in Sources */,
+				BFEBD78D20D2497500F00450 /* S_PhaseGate.swift in Sources */,
+				BFEBD78F20D2498100F00450 /* S_PhaseGateT.swift in Sources */,
+				BFEBD78720D2495800F00450 /* PauliX.swift in Sources */,
+				BFEBD76B20D0FACC00F00450 /* IbmTypes.swift in Sources */,
+				BFEBD79320D2499100F00450 /* T_PhaseGateT.swift in Sources */,
+				BFEBD76D20D0FFD800F00450 /* IbmQX.swift in Sources */,
+				BFEBD77320D1550600F00450 /* IQubit.swift in Sources */,
+				BFEBD77D20D2492100F00450 /* ControlledNOT.swift in Sources */,
+				BFEBD79520D2499600F00450 /* U1.swift in Sources */,
+				BFEBD74F20D0F96500F00450 /* AppDelegate.swift in Sources */,
+				BFEBD77720D156EA00F00450 /* IQuantumCommand.swift in Sources */,
+				BFEBD77920D1573000F00450 /* ProgramTypes.swift in Sources */,
+				BFEBD79D20D298ED00F00450 /* Commands.swift in Sources */,
+				BFEBD77520D155AE00F00450 /* Qubit.swift in Sources */,
+				BFEBD76F20D112CC00F00450 /* Storage.swift in Sources */,
+				BFEBD79720D2499C00F00450 /* U2.swift in Sources */,
+				BFEBD77B20D2468D00F00450 /* Barrier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFEBD75220D0F96500F00450 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEBD75320D0F96500F00450 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFEBD75720D0F96700F00450 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEBD75820D0F96700F00450 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFEBD75B20D0F96700F00450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFEBD75C20D0F96700F00450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFEBD75E20D0F96700F00450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N567SAUEDU;
+				INFOPLIST_FILE = QuantumSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.florkosoft.QuantumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFEBD75F20D0F96700F00450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N567SAUEDU;
+				INFOPLIST_FILE = QuantumSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.florkosoft.QuantumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFEBD74620D0F96500F00450 /* Build configuration list for PBXProject "QuantumSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEBD75B20D0F96700F00450 /* Debug */,
+				BFEBD75C20D0F96700F00450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEBD75D20D0F96700F00450 /* Build configuration list for PBXNativeTarget "QuantumSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEBD75E20D0F96700F00450 /* Debug */,
+				BFEBD75F20D0F96700F00450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFEBD74320D0F96500F00450 /* Project object */;
+}
