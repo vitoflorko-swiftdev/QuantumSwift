@@ -4,6 +4,8 @@ A side project together with: https://github.com/spisiak/QuantumCSharp. The proj
 
 ## Usage
 
+The program must be instantiated and the credentials put in. Afterwards you need only to assemble the qubits array (same as the composer on the IBM QX website, and the program must be executed. The codebase can be copied to another workspace or built into a framework and then used in another project.
+
 ### Example: Random 0 or 1 generator using the Hadamard gate
 
 ```swift
@@ -24,10 +26,6 @@ program.execute
     (sendResult) in
     if let result = sendResult, result.state == .ok
     {
-        if !self.console.text.hasSuffix("Result state is ok")
-        {
-            logTo(console: self.console, message: "Result state is ok")
-        }
         let tmp = program.getQubitResultStates(qubitValueResult: result)
         if let zero = tmp[0].zero
         {
