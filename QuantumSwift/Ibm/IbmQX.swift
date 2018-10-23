@@ -70,6 +70,9 @@ public class IbmQX {
         }
         if let jobResultId = job_Result.id, let authenticationDataId = self.authenticationData?.id {
             let url = self.apiUrl + self.apiJobResult[0] + jobResultId + self.apiJobResult[1] + authenticationDataId
+            let queue = OperationQueue()
+            queue.maxConcurrentOperationCount = 1
+
             for _ in 0..<options.numRetries {
                 self.genericRequest(url: url, type: "GET", completion: { (response) in
                     guard let response = response else { return }
@@ -83,14 +86,22 @@ public class IbmQX {
                             jobResult.results = qasms[0].result?.data?.counts
                             jobResult.state = .ok
                             completion(jobResult)
+                            //queue.cancelAllOperations()
+                            return
                         }
                     } catch {
                         jobResult.errorMessage = error.localizedDescription
                         jobResult.state = .exception
                         completion(jobResult)
+                        //queue.cancelAllOperations()
+                        return
                     }
-//                    sleep(UInt32(options.secInterval * 1000))
                 })
+                usleep(1000000)
+                if jobResult.state == .ok {
+                    return
+                }
+                //queue.waitUntilAllOperationsAreFinished()
             }
         }
     }
@@ -152,15 +163,15 @@ public class IbmQX {
         url += "\(String(describing: options.cache!))".lowercased() + apiJobs[3] + "\(String(describing: options.shots!))"
 
         let postArray =
-        [
-            "qasms":
             [
-                [ "qasm": options.qasmCode ]
-            ],
-            "shots": String(options.shots!),
-            "maxCredits": String(options.maxCredits!),
-            "backend": [ "name": String(options.device!.rawValue).lowercased() ]
-        ] as [String: AnyObject]
+                "qasms":
+                    [
+                        [ "qasm": options.qasmCode ]
+                ],
+                "shots": String(options.shots!),
+                "maxCredits": String(options.maxCredits!),
+                "backend": [ "name": String(options.device!.rawValue).lowercased() ]
+                ] as [String: AnyObject]
 
         let postString = postArray.prettyPrint()
 
@@ -249,7 +260,7 @@ public class IbmQX {
     }
 
     private func dateFrom(day: Int, month: Int, year: Int,
-                                    hours: Int = 0, minutes: Int = 0, seconds: Int = 0) -> Date? {
+                          hours: Int = 0, minutes: Int = 0, seconds: Int = 0) -> Date? {
         let components = DateComponents(year: year, month: month, day: day, hour: hours, minute: minutes, second: seconds)
         return Calendar.current.date(from: components)
     }
