@@ -25,13 +25,15 @@ public class Commands {
         }
     }
 
+    //PUT IN YOUR IBM QX EMAIL AND PASSWORD: register at https://quantumexperience.ng.bluemix.net
+
     public func quantumReverseIndex(length: Int, index: Int, completion: ((_ result: Int) -> Void)!) {
         let factor: Double = Double(length) / 10
         let decimatedIndex: Double = Double(index) / factor
         let quantumIndex: Double = decimatedIndex < 5 ? decimatedIndex.rounded(.up) : decimatedIndex.rounded(.down)
         let program: QuantumProgram = QuantumProgram(options: QuantumProgramOption(device: .simulator,
-                                                                                   email: "vojtech.florko@student.tuke.sk",
-                                                                                   password: "aqwsAQWS1324",
+                                                                                   email: "your.email@email.com",
+                                                                                   password: "password",
                                                                                    maxCredits: 15))
 
         var qubits: [Qubit] = []
